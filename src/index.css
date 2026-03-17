@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", system-ui, sans-serif;
+  --shadow-soft: 0 18px 48px rgba(15, 23, 42, 0.06);
+  --shadow-soft-lg: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-zinc-50 font-sans text-zinc-900 antialiased;
+  }
+
+  * {
+    @apply border-zinc-200;
+  }
+
+  ::selection {
+    @apply bg-emerald-100 text-emerald-900;
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-shell {
+    @apply scroll-mt-28 py-14 sm:py-18;
+  }
+
+  .surface-card {
+    @apply rounded-[28px] border border-zinc-200 bg-white shadow-soft;
+  }
+}
