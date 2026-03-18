@@ -104,7 +104,7 @@ export function HomePage() {
                 description={project.shortDescription}
                 tools={project.tools}
                 analysis={project.analysis}
-                images={[project.thumbnail, project.images[0] ?? project.thumbnail]}
+                images={project.thumbnail}
                 githubUrl={project.githubUrl}
                 detailPageEnabled={project.detailPageEnabled}
               />
@@ -147,4 +147,3 @@ export function HomePage() {
     </main>
   );
 }
-

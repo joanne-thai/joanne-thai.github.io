@@ -26,7 +26,7 @@ export interface Project {
   shortDescription: string;
   tools: string;
   analysis: string;
-  thumbnail: string;
+  thumbnail: string[];
   githubUrl: string;
   detailPageEnabled: boolean;
   powerbiEmbedUrl: string;
@@ -92,15 +92,11 @@ export const portfolio = {
         "Investigated why revenue growth had stalled across regional stores, combining trend analysis, price sensitivity checks, and cohort views to identify the product mix and discount patterns most linked to an 11.5% uplift opportunity.",
       tools: "Power BI, Python, Excel",
       analysis: "EDA, regression analysis, KPI design, dashboard storytelling",
-      thumbnail: "/images/project-retail-revenue.svg",
+      thumbnail: ["/images/1.png", "/images/2.png"],
       githubUrl: "https://github.com/joanne-thai/retail-revenue-levers",
       detailPageEnabled: true,
       powerbiEmbedUrl: "https://app.powerbi.com/view?r=eyJrIjoiNzlmYjhiMGItMjBkZC00ZGQ1LTgzODgtNjAzYWI2NDQyNTU5IiwidCI6IjhiNmM0ZDY5LTc5OTMtNDgyYy04OGU5LTZmOWM5ZjlhMDBiOSJ9",
-      images: [
-        "/images/detail-revenue-overview.svg",
-        "/images/detail-revenue-segmentation.svg",
-        "/images/detail-revenue-recommendations.svg",
-      ],
+      images: ["/images/1.png", "/images/2.png"],
       badge: "Featured Project",
       detail: {
         subtitle: "Pinpointing which pricing and category shifts could unlock revenue growth across stores.",
@@ -139,11 +135,11 @@ export const portfolio = {
         "Explored customer cancellation patterns to uncover where onboarding friction and contract timing were driving avoidable churn, giving the business a clearer retention playbook across segment tiers.",
       tools: "SQL, Tableau, Excel",
       analysis: "Cohort analysis, retention reporting, segmentation",
-      thumbnail: "/images/project-subscription-churn.svg",
+      thumbnail: ["/images/3.png", "/images/4.png"],
       githubUrl: "https://github.com/joanne-thai/subscription-churn-analysis",
       detailPageEnabled: false,
       powerbiEmbedUrl: "",
-      images: [],
+      images: ["/images/3.png", "/images/4.png"],
     },
     {
       id: "operations-forecast-python",
@@ -155,11 +151,11 @@ export const portfolio = {
         "Built a forecasting workflow for support demand that helped operations teams compare staffing needs against expected ticket volume and reduce planning guesswork during seasonal spikes.",
       tools: "Python, Jupyter, Power BI",
       analysis: "Time-series exploration, anomaly review, forecasting",
-      thumbnail: "/images/project-operations-forecast.svg",
+      thumbnail: ["/images/5.png", "/images/6.png"],
       githubUrl: "https://github.com/joanne-thai/operations-forecasting-toolkit",
       detailPageEnabled: false,
       powerbiEmbedUrl: "",
-      images: [],
+      images: ["/images/5.png", "/images/6.png"],
     },
   ] satisfies Project[],
   skills: [
@@ -180,12 +176,9 @@ export const portfolio = {
     {
       title: "Other Skills",
       skills: [
-        "React",
-        "Tailwind CSS",
-        "Git",
-        "API Integration",
         "Stakeholder Communication",
         "Presentation Design",
+        "Matcha Lattes",
       ],
     },
   ],

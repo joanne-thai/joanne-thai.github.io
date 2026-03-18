@@ -138,7 +138,7 @@ export function ProjectShowcaseCard({
               <img
                 src={image}
                 alt={`${title} preview ${imageIndex + 1}`}
-                className="h-80 w-full object-cover xl:h-85"
+                className="h-80 w-full object-cover aspect-auto xl:h-85"
               />
             </div>
           ))}

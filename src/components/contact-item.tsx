@@ -15,7 +15,7 @@ interface ContactItemProps {
 
 export function ContactItem({ label, value, href, icon: Icon, external = false, cta = "Open" }: ContactItemProps) {
   return (
-    <Card className="h-full">
+    <Card className="flex h-full flex-col">
       <CardHeader className="space-y-4">
         <div className="flex size-11 items-center justify-center rounded-2xl border border-emerald-100 bg-emerald-50 text-emerald-600">
           <Icon className="size-5" />
@@ -25,7 +25,7 @@ export function ContactItem({ label, value, href, icon: Icon, external = false, 
           <CardTitle className="mt-2 text-lg">{value}</CardTitle>
         </div>
       </CardHeader>
-      <CardContent>
+      <CardContent className="mt-auto">
         <a
           href={href}
           target={external ? "_blank" : undefined}

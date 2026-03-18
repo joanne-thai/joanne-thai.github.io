@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
+import { MicroscopeImage } from "@/components/microscope-image";
 import { PowerBIEmbed } from "@/components/power-bi-embed";
 import { SectionHeading } from "@/components/section-heading";
 import { buttonVariants } from "@/components/ui/button";
@@ -83,7 +84,7 @@ export function ProjectDetailPage() {
       <section className="pt-8">
         <div className="overflow-hidden rounded-[32px] border border-zinc-200 bg-white p-4 shadow-soft">
           <img
-            src={project.thumbnail}
+            src={project.thumbnail[0]}
             alt={project.title}
             className="h-full min-h-[280px] w-full rounded-[26px] object-cover"
           />
@@ -116,13 +117,17 @@ export function ProjectDetailPage() {
           description="A few supporting frames that show how the dashboard moves from headline metrics to segment-level detail and practical recommendations."
         />
 
-        <div className="mt-8 grid gap-6 lg:grid-cols-3">
+        <div className="mt-8 grid gap-6 lg:grid-cols-2">
           {project.images.map((image, index) => (
-            <div key={image} className="overflow-hidden rounded-[28px] border border-zinc-200 bg-white p-3 shadow-soft">
-              <img
+            <div
+              key={image}
+              className="overflow-visible rounded-[28px] border border-zinc-200 bg-white p-3 shadow-soft"
+            >
+              <MicroscopeImage
                 src={image}
                 alt={`${project.title} screenshot ${index + 1}`}
-                className="h-full w-full rounded-[22px] object-cover"
+                className="rounded-[22px]"
+                imageClassName="object-cover rounded-[22px]"
               />
             </div>
           ))}
