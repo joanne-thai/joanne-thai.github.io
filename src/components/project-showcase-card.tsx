@@ -129,22 +129,22 @@ export function ProjectShowcaseCard({
           </div>
         </div>
 
-        <div className="hidden gap-2 lg:grid lg:grid-cols-2">
+        <div className="hidden gap-0.5 lg:grid lg:grid-cols-2">
           {showcaseImages.map((image, imageIndex) => (
             <div
               key={`${slug}-desktop-${imageIndex}`}
-              className="overflow-hidden odd:rounded-tl-md odd:rounded-bl-md even:rounded-tr-md even:rounded-br-md border border-zinc-200 bg-zinc-100"
+              className="overflow-hidden odd:rounded-tl-md odd:rounded-bl-md even:rounded-tr-md even:rounded-br-md"
             >
               <img
                 src={image}
                 alt={`${title} preview ${imageIndex + 1}`}
-                className="h-80 w-full object-cover aspect-auto xl:h-85"
+                className="w-full object-fit"
               />
             </div>
           ))}
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
+        <div className="grid gap-6 lg:grid-cols-[calc(50%-7px)_calc(50%+7px)] lg:gap-2">
           <p className="text-base leading-7 text-zinc-600">{description}</p>
 
           <div className="space-y-5 border-t border-zinc-200 pt-5 lg:border-t-0 lg:border-l lg:pl-8 lg:pt-0">
