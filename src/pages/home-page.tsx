@@ -89,9 +89,9 @@ export function HomePage() {
       <section id="projects" className="section-shell">
         <div className="page-shell space-y-8">
           <SectionHeading
-            eyebrow="Projects"
-            title="Case-study style work that shows how analysis can support better decisions."
-            description="Each project is framed around a business question, the analysis approach, and the action it enables."
+            eyebrow="Featured Projects"
+            title="Case-study work that turns analysis into clear business direction."
+            description="Each project pairs a practical business question with the supporting visuals, methods, and actions that help the outcome land."
           />
 
           <div className="space-y-6">
@@ -104,10 +104,9 @@ export function HomePage() {
                 description={project.shortDescription}
                 tools={project.tools}
                 analysis={project.analysis}
-                image={project.thumbnail}
+                images={[project.thumbnail, project.images[0] ?? project.thumbnail]}
                 githubUrl={project.githubUrl}
                 detailPageEnabled={project.detailPageEnabled}
-                badge={project.badge}
               />
             ))}
           </div>
@@ -148,5 +147,4 @@ export function HomePage() {
     </main>
   );
 }
-
 
