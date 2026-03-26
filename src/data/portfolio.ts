@@ -70,7 +70,7 @@ export const portfolio = {
   },
   about: {
     summary:
-      "Business Analytics graduate with hands-on experience turning stakeholder objectives into data-driven insights. Proficient in SQL, Excel, Power BI, and SPSS, with foundational Python skills for data analysis. Strong track record of delivering intuitive dashboards and reports that drive decision-making and enable meaningful business conversations.",
+      "Business Analytics graduate with hands-on experience turning stakeholder objectives into data-driven insights. Proficient in SQL, Excel, Power BI, and SAS Viya, with foundational Python skills for data analysis. Strong track record of delivering intuitive dashboards and reports that drive decision-making and enable meaningful business conversations.",
     education: {
       degree: "Master of Business Analytics",
       university: "University of Wollongong",
