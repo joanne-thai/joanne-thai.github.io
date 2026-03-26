@@ -62,15 +62,17 @@ export function ProjectDetailPage() {
           <ArrowLeft className="size-4" />
           Back to Projects
         </Link>
-        <a
-          href={project.githubUrl}
-          target="_blank"
-          rel="noreferrer"
-          className={buttonVariants({ variant: "secondary", size: "sm" })}
-        >
-          Open GitHub
-          <ArrowUpRight className="size-4" />
-        </a>
+        {project.githubUrl ? (
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noreferrer"
+            className={buttonVariants({ variant: "secondary", size: "sm" })}
+          >
+            Open GitHub
+            <ArrowUpRight className="size-4" />
+          </a>
+        ) : null}
       </div>
 
       <section className="pt-8">
@@ -91,9 +93,11 @@ export function ProjectDetailPage() {
         </div>
       </section>
 
-      <section className="pt-8">
-        <PowerBIEmbed title={`${project.title} Power BI report`} embedUrl={project.powerbiEmbedUrl} />
-      </section>
+      {project.powerbiEmbedUrl ? (
+        <section className="pt-8">
+          <PowerBIEmbed title={`${project.title} Power BI report`} embedUrl={project.powerbiEmbedUrl} />
+        </section>
+      ) : null}
 
       <section className="grid gap-8 pt-10 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-8">

@@ -13,7 +13,7 @@ interface ProjectShowcaseCardProps {
   tools: string;
   analysis: string;
   images: string[];
-  githubUrl: string;
+  githubUrl?: string;
   detailPageEnabled: boolean;
 }
 
@@ -31,6 +31,7 @@ export function ProjectShowcaseCard({
   const showcaseImages = images.length >= 2 ? images.slice(0, 2) : [images[0], images[0]];
   const sliderRef = useRef<HTMLDivElement | null>(null);
   const [activeSlide, setActiveSlide] = useState(0);
+  const hasActions = detailPageEnabled || Boolean(githubUrl);
 
   const scrollToSlide = (nextIndex: number) => {
     const slider = sliderRef.current;
@@ -157,24 +158,28 @@ export function ProjectShowcaseCard({
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-3">
-              {detailPageEnabled ? (
-                <Link to={`/projects/${slug}`} className={buttonVariants({ variant: "secondary" })}>
-                  View Detail
-                  <ArrowRight className="size-4" />
-                </Link>
-              ) : null}
+            {hasActions ? (
+              <div className="flex flex-wrap gap-3">
+                {detailPageEnabled ? (
+                  <Link to={`/projects/${slug}`} className={buttonVariants({ variant: "secondary" })}>
+                    View Detail
+                    <ArrowRight className="size-4" />
+                  </Link>
+                ) : null}
 
-              <a
-                href={githubUrl}
-                target="_blank"
-                rel="noreferrer"
-                className={cn(buttonVariants({ variant: "outline" }), "justify-between")}
-              >
-                Open GitHub
-                <ArrowUpRight className="size-4" />
-              </a>
-            </div>
+                {githubUrl ? (
+                  <a
+                    href={githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={cn(buttonVariants({ variant: "outline" }), "justify-between")}
+                  >
+                    Open GitHub
+                    <ArrowUpRight className="size-4" />
+                  </a>
+                ) : null}
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

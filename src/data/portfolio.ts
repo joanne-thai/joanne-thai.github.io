@@ -22,14 +22,14 @@ export interface Project {
   index: string;
   slug: string;
   title: string;
-  category: "Power BI" | "SQL" | "Python";
+  category: "Power BI" | "SQL" | "Python" | "SQL / Python";
   shortDescription: string;
   tools: string;
   analysis: string;
   thumbnail: string[];
-  githubUrl: string;
+  githubUrl?: string;
   detailPageEnabled: boolean;
-  powerbiEmbedUrl: string;
+  powerbiEmbedUrl?: string;
   images: string[];
   badge?: string;
   detail?: ProjectDetailContent;
@@ -208,6 +208,28 @@ export const portfolio = {
           "Refine the menu by prioritising high-performing pizzas and reducing low-value products and ingredients that add complexity without strong revenue contribution.",
         ],
       },
+    },
+    {
+      id: "netflix-user-behavior-analysis",
+      index: "04",
+      slug: "netflix-user-behavior-analysis",
+      title: "Netflix User Behavior Analysis: SQL & Python Workflow",
+      category: "SQL / Python",
+      shortDescription:
+        "Analysed Netflix-style user behavior data across SQL and Python workflows to uncover watch-time patterns, content preferences, and viewing differences by subscription tier, genre, device, and geography.",
+      tools: "MySQL, Python, Pandas, Matplotlib",
+      analysis:
+        "Data cleaning, exploratory analysis, watch-time aggregation, subscription segmentation, genre analysis, device-level review analysis",
+      thumbnail: [
+        "/images/project-netflix-subscription-watchtime.png",
+        "/images/project-netflix-genre-watchtime.png",
+      ],
+      githubUrl: 'https://github.com/joanne-thai/my_sequels/tree/main/netflix_behavior_2025',
+      detailPageEnabled: false,
+      images: [
+        "/images/project-netflix-subscription-watchtime.png",
+        "/images/project-netflix-genre-watchtime.png",
+      ],
     },
   ] satisfies Project[],
   skills: [
