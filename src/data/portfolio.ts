@@ -209,6 +209,7 @@ export const portfolio = {
         ],
       },
     },
+    
     {
       id: "netflix-user-behavior-analysis",
       index: "04",
@@ -230,6 +231,22 @@ export const portfolio = {
         "/images/project-netflix-subscription-watchtime.png",
         "/images/project-netflix-genre-watchtime.png",
       ],
+    },
+    {
+      id: "retail-sales-performance-analysis-sql",
+      index: "05",
+      slug: "retail-sales-performance-analysis-sql",
+      title: "Retail Sales Performance Analysis",
+      category: "SQL",
+      shortDescription:
+        "Analysed retail transaction data in MySQL to evaluate revenue, profitability, discount strategy, and category performance, highlighting where sales growth was undermining margins.",
+      tools: "MySQL",
+      analysis:
+        "Data validation, data cleaning, profitability analysis, discount impact analysis, category performance analysis, stored procedure reporting",
+      thumbnail: ["/images/retail-sales-erd-workflow.svg", "retail-sales-key-insights.svg"],
+      githubUrl: "https://github.com/joanne-thai/my_sequels/tree/main/retail_sales_sql_project",
+      detailPageEnabled: false,
+      images:  ["/images/retail-sales-erd-workflow.svg", "retail-sales-key-insights.svg"],
     },
   ] satisfies Project[],
   skills: [
