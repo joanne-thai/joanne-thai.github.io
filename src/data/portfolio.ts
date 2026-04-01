@@ -45,7 +45,7 @@ export const portfolio = {
     socialLinks: [
       {
         label: "LinkedIn",
-        href: "https://www.linkedin.com/in/joanne-thai",
+        href: "https://www.linkedin.com/in/joannethaii/",
         icon: Linkedin,
         external: true,
       },
@@ -276,8 +276,8 @@ export const portfolio = {
   contacts: [
     {
       label: "LinkedIn",
-      value: "linkedin.com/in/joanne-thai",
-      href: "https://www.linkedin.com/in/joanne-thai",
+      value: "linkedin.com/in/joannethaii",
+      href: "https://www.linkedin.com/in/joannethaii/",
       icon: Linkedin,
       external: true,
       cta: "View profile",
