@@ -243,10 +243,10 @@ export const portfolio = {
       tools: "MySQL",
       analysis:
         "Data validation, data cleaning, profitability analysis, discount impact analysis, category performance analysis, stored procedure reporting",
-      thumbnail: ["/images/retail-sales-erd-workflow.svg", "retail-sales-key-insights.svg"],
+      thumbnail: ["/images/retail-sales-erd-workflow.svg", "/images/retail-sales-key-insights.svg"],
       githubUrl: "https://github.com/joanne-thai/my_sequels/tree/main/retail_sales_sql_project",
       detailPageEnabled: false,
-      images:  ["/images/retail-sales-erd-workflow.svg", "retail-sales-key-insights.svg"],
+      images:  ["/images/retail-sales-erd-workflow.svg", "/images/retail-sales-key-insights.svg"],
     },
   ] satisfies Project[],
   skills: [
