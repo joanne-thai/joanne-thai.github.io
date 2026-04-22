@@ -4,7 +4,9 @@ import { ProjectShowcaseCard } from "@/components/project-showcase-card";
 import { SectionHeading } from "@/components/section-heading";
 import { SkillGroup } from "@/components/skill-group";
 import { SocialLinkButton } from "@/components/social-link-button";
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowUpRight } from "lucide-react";
 
 export function HomePage() {
   return (
@@ -50,11 +52,7 @@ export function HomePage() {
 
       <section id="about" className="section-shell">
         <div className="page-shell space-y-8">
-          <SectionHeading
-            eyebrow="About"
-            title="Clear communication, thoughtful analysis, and business-first storytelling."
-            description="A concise snapshot of how I approach analysis work, plus the education foundation behind it."
-          />
+          <SectionHeading eyebrow="About" />
 
           <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
             <Card>
@@ -64,35 +62,33 @@ export function HomePage() {
               </CardHeader>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>{portfolio.about.education.degree}</CardTitle>
-                <CardDescription>
-                  {portfolio.about.education.university} | {portfolio.about.education.duration}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 text-sm leading-7 text-zinc-600">
-                  {portfolio.about.education.highlights.map((highlight) => (
-                    <li key={highlight} className="flex gap-3">
-                      <span className="mt-2 size-1.5 rounded-full bg-emerald-500" />
-                      <span>{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+            <div className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>{portfolio.about.education.degree}</CardTitle>
+                  <CardDescription>
+                    {portfolio.about.education.university} | {portfolio.about.education.duration}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3 text-sm leading-7 text-zinc-600">
+                    {portfolio.about.education.highlights.map((highlight) => (
+                      <li key={highlight} className="flex gap-3">
+                        <span className="mt-2 size-1.5 rounded-full bg-emerald-500" />
+                        <span>{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="projects" className="section-shell">
         <div className="page-shell space-y-8">
-          <SectionHeading
-            eyebrow="Featured Projects"
-            title="Case-study work that turns analysis into clear business direction."
-            description="Each project pairs a practical business question with the supporting visuals, methods, and actions that help the outcome land."
-          />
+          <SectionHeading eyebrow="Featured Projects" />
 
           <div className="space-y-6">
             {portfolio.projects.map((project) => (
@@ -113,13 +109,43 @@ export function HomePage() {
         </div>
       </section>
 
+      <section id="certifications" className="section-shell">
+        <div className="page-shell space-y-8">
+          <SectionHeading eyebrow="Certifications" />
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {portfolio.about.certifications.map((certification) => (
+              <a
+                key={certification.title}
+                href={certification.href}
+                target="_blank"
+                rel="noreferrer"
+                className="surface-card group block p-6 transition hover:border-emerald-200 hover:bg-emerald-50/50"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="min-w-0">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <Badge>{certification.issuer}</Badge>
+                      {certification.issued ? (
+                        <span className="text-xs font-medium text-zinc-500">{certification.issued}</span>
+                      ) : null}
+                    </div>
+                    <h3 className="mt-4 text-xl font-semibold tracking-tight text-zinc-900">
+                      {certification.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-6 text-zinc-600">{certification.description}</p>
+                  </div>
+                  <ArrowUpRight className="mt-1 size-5 shrink-0 text-zinc-400 transition group-hover:text-emerald-600" />
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="skills" className="section-shell">
         <div className="page-shell space-y-8">
-          <SectionHeading
-            eyebrow="Skills"
-            title="A balanced toolkit for analysis, reporting, and polished delivery."
-            description="Core analyst capabilities paired with the workflow and communication tools that help projects land well."
-          />
+          <SectionHeading eyebrow="Skills" />
 
           <div className="grid gap-6 md:grid-cols-2">
             {portfolio.skills.map((group) => (
@@ -131,11 +157,7 @@ export function HomePage() {
 
       <section id="contact" className="section-shell pb-18">
         <div className="page-shell space-y-8">
-          <SectionHeading
-            eyebrow="Contact"
-            title="Open to analyst roles, project conversations, and coffee chats."
-            description="Reach out in whichever format is easiest. Links below open directly to the right place."
-          />
+          <SectionHeading eyebrow="Contact" />
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {portfolio.contacts.map((contact) => (

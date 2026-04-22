@@ -1,0 +1,313 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "Joanne Thai" [ref=e7] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e8]:
+        - link "About" [ref=e9] [cursor=pointer]:
+          - /url: /#about
+        - link "Projects" [ref=e10] [cursor=pointer]:
+          - /url: /#projects
+        - link "Skills" [ref=e11] [cursor=pointer]:
+          - /url: /#skills
+        - link "Contact" [ref=e12] [cursor=pointer]:
+          - /url: /#contact
+  - main [ref=e13]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - paragraph [ref=e19]: Data Analyst Portfolio
+        - heading "Joanne Thai" [level=1] [ref=e20]
+        - paragraph [ref=e21]: Data Analyst turning messy business questions into clear, decision-ready insights.
+        - paragraph [ref=e22]: I build practical dashboards, reporting workflows, and analysis narratives that help teams move from raw data to confident action. My focus is on pairing sound analysis with calm, readable communication.
+        - generic [ref=e23]:
+          - link "LinkedIn" [ref=e24] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/joannethaii/
+            - generic [ref=e25]:
+              - img [ref=e26]
+              - text: LinkedIn
+            - img [ref=e30]
+          - link "GitHub" [ref=e33] [cursor=pointer]:
+            - /url: https://github.com/joanne-thai
+            - generic [ref=e34]:
+              - img [ref=e35]
+              - text: GitHub
+            - img [ref=e38]
+          - link "Email" [ref=e41] [cursor=pointer]:
+            - /url: mailto:joannethai.work@gmail.com
+            - generic [ref=e42]:
+              - img [ref=e43]
+              - text: Email
+          - link "Coffee Chat" [ref=e46] [cursor=pointer]:
+            - /url: https://calendly.com/joannethai-work/letschat
+            - generic [ref=e47]:
+              - img [ref=e48]
+              - text: Coffee Chat
+            - img [ref=e50]
+      - img "Joanne Thai" [ref=e55]
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - paragraph [ref=e59]: About
+        - heading "Clear communication, thoughtful analysis, and business-first storytelling." [level=2] [ref=e60]
+        - paragraph [ref=e61]: A concise snapshot of how I approach analysis work, plus the education foundation behind it.
+      - generic [ref=e62]:
+        - generic [ref=e64]:
+          - heading "Professional Summary" [level=3] [ref=e65]
+          - paragraph [ref=e66]: Business Analytics graduate with hands-on experience turning stakeholder objectives into data-driven insights. Proficient in SQL, Excel, Power BI, and SAS Viya, with foundational Python skills for data analysis. Strong track record of delivering intuitive dashboards and reports that drive decision-making and enable meaningful business conversations.
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - heading "Master of Business Analytics" [level=3] [ref=e70]
+            - paragraph [ref=e71]: University of Wollongong | 2023 - 2024
+          - list [ref=e73]:
+            - listitem [ref=e74]:
+              - generic [ref=e76]: Built end-to-end dashboarding and forecasting projects across retail and operations use cases.
+            - listitem [ref=e77]:
+              - generic [ref=e79]: Combined quantitative coursework with communication-focused presentations for audiences.
+    - generic [ref=e108]:
+      - generic [ref=e109]:
+        - paragraph [ref=e110]: Featured Projects
+        - heading "Case-study work that turns analysis into clear business direction." [level=2] [ref=e111]
+        - paragraph [ref=e112]: Each project pairs a practical business question with the supporting visuals, methods, and actions that help the outcome land.
+      - generic [ref=e113]:
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - generic [ref=e117]: "01"
+            - 'heading "Coffee Sales Analytics: Pricing, Demand & Product Insights" [level=3] [ref=e118]'
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - 'img "Coffee Sales Analytics: Pricing, Demand & Product Insights preview 1" [ref=e122]'
+              - 'img "Coffee Sales Analytics: Pricing, Demand & Product Insights preview 2" [ref=e124]'
+            - generic [ref=e126]:
+              - button "Previous project image" [disabled] [ref=e127]:
+                - img [ref=e128]
+              - generic [ref=e130]:
+                - button "Go to project image 1" [pressed] [ref=e131]
+                - button "Go to project image 2" [ref=e132]
+              - button "Next project image" [ref=e133]:
+                - img [ref=e134]
+          - generic [ref=e136]:
+            - paragraph [ref=e137]: Investigated revenue performance by analysing store location, product mix, pricing behaviour, and time-based demand patterns. Identified key revenue drivers and optimisation opportunities in product portfolio and pricing strategy.
+            - generic [ref=e138]:
+              - generic [ref=e139]:
+                - paragraph [ref=e140]: "Tools: Power BI"
+                - paragraph [ref=e141]: "Analysis: EDA, trend analysis, pricing strategy, demand analysis, product segmentation, KPI design"
+              - generic [ref=e142]:
+                - link "View Detail" [ref=e143] [cursor=pointer]:
+                  - /url: /projects/coffee-sales-powerbi
+                  - text: View Detail
+                  - img [ref=e144]
+                - link "Open GitHub" [ref=e146] [cursor=pointer]:
+                  - /url: https://github.com/joanne-thai/powerbi_projects/tree/main/Coffee%20Sales
+                  - text: Open GitHub
+                  - img [ref=e147]
+        - generic [ref=e151]:
+          - generic [ref=e152]:
+            - generic [ref=e153]: "02"
+            - heading "Emergency Room Operations Analytics" [level=3] [ref=e154]
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - img "Emergency Room Operations Analytics preview 1" [ref=e158]
+              - img "Emergency Room Operations Analytics preview 2" [ref=e160]
+            - generic [ref=e162]:
+              - button "Previous project image" [disabled] [ref=e163]:
+                - img [ref=e164]
+              - generic [ref=e166]:
+                - button "Go to project image 1" [pressed] [ref=e167]
+                - button "Go to project image 2" [ref=e168]
+              - button "Next project image" [ref=e169]:
+                - img [ref=e170]
+          - generic [ref=e172]:
+            - paragraph [ref=e173]: Analysed emergency room operations to identify demand patterns, bottlenecks, and drivers of patient experience, highlighting opportunities to improve patient flow, optimize staffing, and enhance service quality.
+            - generic [ref=e174]:
+              - generic [ref=e175]:
+                - paragraph [ref=e176]: "Tools: Power BI"
+                - paragraph [ref=e177]: "Analysis: Time-series analysis, operational flow analysis, correlation analysis, demographic segmentationn"
+              - generic [ref=e178]:
+                - link "View Detail" [ref=e179] [cursor=pointer]:
+                  - /url: /projects/emergency-room-operations-analytics-powerbi
+                  - text: View Detail
+                  - img [ref=e180]
+                - link "Open GitHub" [ref=e182] [cursor=pointer]:
+                  - /url: https://github.com/joanne-thai/powerbi_projects/tree/main/Hospital%20ER
+                  - text: Open GitHub
+                  - img [ref=e183]
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e189]: "03"
+            - heading "Pizza Sales & Product Performance Analytics" [level=3] [ref=e190]
+          - generic [ref=e191]:
+            - generic [ref=e192]:
+              - img "Pizza Sales & Product Performance Analytics preview 1" [ref=e194]
+              - img "Pizza Sales & Product Performance Analytics preview 2" [ref=e196]
+            - generic [ref=e198]:
+              - button "Previous project image" [disabled] [ref=e199]:
+                - img [ref=e200]
+              - generic [ref=e202]:
+                - button "Go to project image 1" [pressed] [ref=e203]
+                - button "Go to project image 2" [ref=e204]
+              - button "Next project image" [ref=e205]:
+                - img [ref=e206]
+          - generic [ref=e208]:
+            - paragraph [ref=e209]: Analysed sales performance and product dynamics to uncover revenue drivers, demand patterns, and menu inefficiencies, enabling data-driven decisions around pricing, product mix, and operational optimization.
+            - generic [ref=e210]:
+              - generic [ref=e211]:
+                - paragraph [ref=e212]: "Tools: Power BI"
+                - paragraph [ref=e213]: "Analysis: Time-series analysis, product performance analysis, menu engineering segmentation, demand vs revenue analysis"
+              - generic [ref=e214]:
+                - link "View Detail" [ref=e215] [cursor=pointer]:
+                  - /url: /projects/pizza-sales-analytics-powerbi
+                  - text: View Detail
+                  - img [ref=e216]
+                - link "Open GitHub" [ref=e218] [cursor=pointer]:
+                  - /url: https://github.com/joanne-thai/powerbi_projects/tree/main/Pizza%20Sales
+                  - text: Open GitHub
+                  - img [ref=e219]
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - generic [ref=e225]: "04"
+            - 'heading "Netflix User Behavior Analysis: SQL & Python Workflow" [level=3] [ref=e226]'
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - 'img "Netflix User Behavior Analysis: SQL & Python Workflow preview 1" [ref=e230]'
+              - 'img "Netflix User Behavior Analysis: SQL & Python Workflow preview 2" [ref=e232]'
+            - generic [ref=e234]:
+              - button "Previous project image" [disabled] [ref=e235]:
+                - img [ref=e236]
+              - generic [ref=e238]:
+                - button "Go to project image 1" [pressed] [ref=e239]
+                - button "Go to project image 2" [ref=e240]
+              - button "Next project image" [ref=e241]:
+                - img [ref=e242]
+          - generic [ref=e244]:
+            - paragraph [ref=e245]: Analysed Netflix-style user behavior data across SQL and Python workflows to uncover watch-time patterns, content preferences, and viewing differences by subscription tier, genre, device, and geography.
+            - generic [ref=e246]:
+              - generic [ref=e247]:
+                - paragraph [ref=e248]: "Tools: MySQL, Python, Pandas, Matplotlib"
+                - paragraph [ref=e249]: "Analysis: Data cleaning, exploratory analysis, watch-time aggregation, subscription segmentation, genre analysis, device-level review analysis"
+              - link "Open GitHub" [ref=e251] [cursor=pointer]:
+                - /url: https://github.com/joanne-thai/my_sequels/tree/main/netflix_behavior_2025
+                - text: Open GitHub
+                - img [ref=e252]
+        - generic [ref=e256]:
+          - generic [ref=e257]:
+            - generic [ref=e258]: "05"
+            - heading "Retail Sales Performance Analysis" [level=3] [ref=e259]
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - img "Retail Sales Performance Analysis preview 1" [ref=e263]
+              - img "Retail Sales Performance Analysis preview 2" [ref=e265]
+            - generic [ref=e267]:
+              - button "Previous project image" [disabled] [ref=e268]:
+                - img [ref=e269]
+              - generic [ref=e271]:
+                - button "Go to project image 1" [pressed] [ref=e272]
+                - button "Go to project image 2" [ref=e273]
+              - button "Next project image" [ref=e274]:
+                - img [ref=e275]
+          - generic [ref=e277]:
+            - paragraph [ref=e278]: Analysed retail transaction data in MySQL to evaluate revenue, profitability, discount strategy, and category performance, highlighting where sales growth was undermining margins.
+            - generic [ref=e279]:
+              - generic [ref=e280]:
+                - paragraph [ref=e281]: "Tools: MySQL"
+                - paragraph [ref=e282]: "Analysis: Data validation, data cleaning, profitability analysis, discount impact analysis, category performance analysis, stored procedure reporting"
+              - link "Open GitHub" [ref=e284] [cursor=pointer]:
+                - /url: https://github.com/joanne-thai/my_sequels/tree/main/retail_sales_sql_project
+                - text: Open GitHub
+                - img [ref=e285]
+    - generic [ref=e289]:
+      - generic [ref=e290]:
+        - paragraph [ref=e291]: Certifications
+        - heading "Verified credentials across Python and practical data science work." [level=2] [ref=e382]
+        - paragraph [ref=e293]: Recent certifications that support Joanne's analyst toolkit and applied project workflow.
+      - generic [ref=e294]:
+        - link "freeCodeCamp Python Certification Validated Python fundamentals through required projects and a certification exam." [ref=e383] [cursor=pointer]:
+          - /url: https://freecodecamp.org/certification/joannethai/python-v9
+          - generic [ref=e384]:
+            - generic [ref=e385]:
+              - generic [ref=e387]: freeCodeCamp
+              - heading "Python Certification" [level=3] [ref=e388]
+              - paragraph [ref=e389]: Validated Python fundamentals through required projects and a certification exam.
+            - img [ref=e390]
+        - link "Forage April 2026 Data Science Job Simulation Completed practical data science tasks across business problem framing, exploratory analysis, data cleaning, feature engineering, modeling, evaluation, and recommendations." [ref=e393] [cursor=pointer]:
+          - /url: https://www.theforage.com/completion-certificates/SKZxezskWgmFjRvj9/Tcz8gTtprzAS4xSoK_SKZxezskWgmFjRvj9_RtGp7X4HyLQiuqNiu_1775968394592_completion_certificate.pdf
+          - generic [ref=e394]:
+            - generic [ref=e395]:
+              - generic [ref=e396]:
+                - generic [ref=e397]: Forage
+                - generic [ref=e398]: April 2026
+              - heading "Data Science Job Simulation" [level=3] [ref=e399]
+              - paragraph [ref=e400]: Completed practical data science tasks across business problem framing, exploratory analysis, data cleaning, feature engineering, modeling, evaluation, and recommendations.
+            - img [ref=e401]
+    - generic [ref=e316]:
+      - generic [ref=e317]:
+        - paragraph [ref=e318]: Skills
+        - heading "A balanced toolkit for analysis, reporting, and polished delivery." [level=2] [ref=e404]
+        - paragraph [ref=e320]: Core analyst capabilities paired with the workflow and communication tools that help projects land well.
+      - generic [ref=e321]:
+        - generic [ref=e405]:
+          - heading "Data Analyst Skills" [level=3] [ref=e407]
+          - generic [ref=e408]:
+            - generic [ref=e409]: SQL
+            - generic [ref=e410]: Power BI
+            - generic [ref=e411]: Python
+            - generic [ref=e412]: Excel
+            - generic [ref=e413]: Data Cleaning
+            - generic [ref=e414]: Dashboarding
+            - generic [ref=e415]: Data Visualization
+            - generic [ref=e416]: Business Analysis
+            - generic [ref=e417]: Reporting
+        - generic [ref=e418]:
+          - heading "Other Skills" [level=3] [ref=e420]
+          - generic [ref=e421]:
+            - generic [ref=e422]: Stakeholder Communication
+            - generic [ref=e423]: Presentation Design
+            - generic [ref=e424]: Matcha Lattes
+    - generic [ref=e426]:
+      - generic [ref=e427]:
+        - paragraph [ref=e428]: Contact
+        - heading "Open to analyst roles, project conversations, and coffee chats." [level=2] [ref=e429]
+        - paragraph [ref=e430]: Reach out in whichever format is easiest. Links below open directly to the right place.
+      - generic [ref=e431]:
+        - generic [ref=e432]:
+          - generic [ref=e433]:
+            - img [ref=e435]
+            - generic [ref=e439]:
+              - paragraph [ref=e440]: LinkedIn
+              - heading "linkedin.com/in/joannethaii" [level=3] [ref=e441]
+          - link "View profile" [ref=e443] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/joannethaii/
+            - text: View profile
+            - img [ref=e444]
+        - generic [ref=e447]:
+          - generic [ref=e448]:
+            - img [ref=e450]
+            - generic [ref=e453]:
+              - paragraph [ref=e454]: GitHub
+              - heading "github.com/joanne-thai" [level=3] [ref=e455]
+          - link "Explore work" [ref=e457] [cursor=pointer]:
+            - /url: https://github.com/joanne-thai
+            - text: Explore work
+            - img [ref=e458]
+        - generic [ref=e461]:
+          - generic [ref=e462]:
+            - img [ref=e464]
+            - generic [ref=e467]:
+              - paragraph [ref=e468]: Gmail
+              - heading "joannethai.work@gmail.com" [level=3] [ref=e469]
+          - link "Send email" [ref=e471] [cursor=pointer]:
+            - /url: mailto:joannethai.work@gmail.com
+            - text: Send email
+            - img [ref=e472]
+        - generic [ref=e475]:
+          - generic [ref=e476]:
+            - img [ref=e478]
+            - generic [ref=e480]:
+              - paragraph [ref=e481]: Coffee Chat
+              - heading "Book a Google Meet via Calendly" [level=3] [ref=e482]
+          - link "Schedule chat" [ref=e484] [cursor=pointer]:
+            - /url: https://calendly.com/joannethai-work/letschat
+            - text: Schedule chat
+            - img [ref=e485]
+  - contentinfo [ref=e378]:
+    - generic [ref=e379]:
+      - paragraph [ref=e380]: Joanne Thai Portfolio
+      - paragraph [ref=e381]: From Gong.

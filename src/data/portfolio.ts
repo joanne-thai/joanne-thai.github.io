@@ -80,6 +80,23 @@ export const portfolio = {
         "Combined quantitative coursework with communication-focused presentations for audiences.",
       ],
     },
+    certifications: [
+      {
+        title: "Python Certification",
+        issuer: "freeCodeCamp",
+        href: "https://freecodecamp.org/certification/joannethai/python-v9",
+        description:
+          "Validated Python fundamentals through required projects and a certification exam.",
+      },
+      {
+        title: "Data Science Job Simulation",
+        issuer: "Forage",
+        issued: "April 2026",
+        href: "https://www.theforage.com/completion-certificates/SKZxezskWgmFjRvj9/Tcz8gTtprzAS4xSoK_SKZxezskWgmFjRvj9_RtGp7X4HyLQiuqNiu_1775968394592_completion_certificate.pdf",
+        description:
+          "Completed practical data science tasks across business problem framing, exploratory analysis, data cleaning, feature engineering, modeling, evaluation, and recommendations.",
+      },
+    ],
   },
   projects: [
     {
