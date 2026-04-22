@@ -4,3 +4,4 @@ dist/
 .DS_Store
 .vscode/
 vite.config.d.ts
+.playwright-mcp
