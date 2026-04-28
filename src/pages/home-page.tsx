@@ -11,42 +11,21 @@ import { ArrowUpRight, Linkedin, MessageSquareMore } from "lucide-react";
 export function HomePage() {
   const linkedInLink = portfolio.profile.socialLinks.find((link) => link.label === "LinkedIn");
   const coffeeChatLink = portfolio.profile.socialLinks.find((link) => link.label === "Coffee Chat");
-  const heroSocialLinks = portfolio.profile.socialLinks.filter(
-    (link) => link.label !== "LinkedIn" && link.label !== "Coffee Chat",
-  );
+  const desktopBubbleLabels = new Set(["LinkedIn", "Coffee Chat"]);
 
   return (
     <main>
       <section className="section-shell pt-12 sm:pt-18">
         <div className="page-shell">
           <div className="surface-card overflow-hidden px-6 py-8 sm:px-10 sm:py-12">
-            <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-              <div>
+            <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-10">
+              <div className="lg:col-start-1 lg:row-start-1">
                 <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl">
                   {portfolio.profile.name}
                 </h1>
-                <p className="hero-copy mt-8 max-w-2xl text-xl leading-[1.55] text-zinc-700 sm:text-2xl">
-                  Data Analyst turning messy business questions into{" "}
-                  <span className="hero-keyword">clear, decision-ready insights</span>. I build{" "}
-                  <span className="hero-keyword">practical dashboards</span> and analysis narratives that help teams
-                  move from raw data to{" "}
-                  <span className="hero-keyword">confident action</span>.
-                </p>
-
-                <div className="mt-8 flex flex-wrap gap-3">
-                  {heroSocialLinks.map((link) => (
-                    <SocialLinkButton
-                      key={link.label}
-                      href={link.href}
-                      label={link.label}
-                      icon={link.icon}
-                      external={link.external}
-                    />
-                  ))}
-                </div>
               </div>
 
-              <div className="mx-auto w-full max-w-xl lg:max-w-2xl">
+              <div className="mx-auto w-full lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:max-w-2xl">
                 <div className="relative overflow-hidden rounded-[32px] border border-zinc-200 bg-white p-4 shadow-soft">
                   {linkedInLink ? (
                     <a
@@ -75,6 +54,30 @@ export function HomePage() {
                     alt={portfolio.profile.name}
                     className="h-full w-full rounded-[26px] object-cover"
                   />
+                </div>
+              </div>
+
+              <div className="lg:col-start-1 lg:row-start-2">
+                <p className="hero-copy max-w-2xl text-lg leading-[1.6] text-zinc-700 sm:text-xl sm:leading-[1.55] lg:text-2xl">
+                  Data Analyst turning messy business questions into{" "}
+                  <span className="hero-keyword">clear, decision-ready insights</span>. I build{" "}
+                  <span className="hero-keyword">practical dashboards</span> and analysis narratives that help teams
+                  move from raw data to{" "}
+                  <span className="hero-keyword">confident action</span>.
+                </p>
+
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {portfolio.profile.socialLinks.map((link) => (
+                    <SocialLinkButton
+                      key={link.label}
+                      href={link.href}
+                      label={link.label}
+                      icon={link.icon}
+                      external={link.external}
+                      iconOnlyOnMobile
+                      className={desktopBubbleLabels.has(link.label) ? "sm:hidden" : undefined}
+                    />
+                  ))}
                 </div>
               </div>
             </div>
