@@ -97,6 +97,14 @@ export const portfolio = {
         description:
           "Completed practical data science tasks across business problem framing, exploratory analysis, data cleaning, feature engineering, modeling, evaluation, and recommendations.",
       },
+      {
+        title: "SQL (Intermediate)",
+        issuer: "HackerRank",
+        issued: "April 2026",
+        href: "https://www.hackerrank.com/certificates/291ff7598a65",
+        description:
+          "Earned HackerRank's SQL (Intermediate) certification, validating SQL skills for querying, aggregation, joins, and analytical problem solving.",
+      },
     ],
   },
   projects: [
