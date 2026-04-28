@@ -6,25 +6,35 @@ import { SkillGroup } from "@/components/skill-group";
 import { SocialLinkButton } from "@/components/social-link-button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Linkedin, MessageSquareMore } from "lucide-react";
 
 export function HomePage() {
+  const linkedInLink = portfolio.profile.socialLinks.find((link) => link.label === "LinkedIn");
+  const coffeeChatLink = portfolio.profile.socialLinks.find((link) => link.label === "Coffee Chat");
+  const heroSocialLinks = portfolio.profile.socialLinks.filter(
+    (link) => link.label !== "LinkedIn" && link.label !== "Coffee Chat",
+  );
+
   return (
     <main>
       <section className="section-shell pt-12 sm:pt-18">
         <div className="page-shell">
           <div className="surface-card overflow-hidden px-6 py-8 sm:px-10 sm:py-12">
-            <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
               <div>
-                <p className="text-sm font-medium uppercase tracking-[0.24em] text-emerald-600">Data Analyst Portfolio</p>
-                <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl">
+                <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl">
                   {portfolio.profile.name}
                 </h1>
-                <p className="mt-5 max-w-2xl text-xl leading-8 text-zinc-700 sm:text-2xl">{portfolio.profile.role}</p>
-                <p className="mt-6 max-w-2xl text-base leading-8 text-zinc-600 sm:text-lg">{portfolio.profile.intro}</p>
+                <p className="hero-copy mt-8 max-w-2xl text-xl leading-[1.55] text-zinc-700 sm:text-2xl">
+                  Data Analyst turning messy business questions into{" "}
+                  <span className="hero-keyword">clear, decision-ready insights</span>. I build{" "}
+                  <span className="hero-keyword">practical dashboards</span> and analysis narratives that help teams
+                  move from raw data to{" "}
+                  <span className="hero-keyword">confident action</span>.
+                </p>
 
                 <div className="mt-8 flex flex-wrap gap-3">
-                  {portfolio.profile.socialLinks.map((link) => (
+                  {heroSocialLinks.map((link) => (
                     <SocialLinkButton
                       key={link.label}
                       href={link.href}
@@ -36,8 +46,30 @@ export function HomePage() {
                 </div>
               </div>
 
-              <div className="mx-auto w-full max-w-md">
-                <div className="overflow-hidden rounded-[32px] border border-zinc-200 bg-white p-4 shadow-soft">
+              <div className="mx-auto w-full max-w-xl lg:max-w-2xl">
+                <div className="relative overflow-hidden rounded-[32px] border border-zinc-200 bg-white p-4 shadow-soft">
+                  {linkedInLink ? (
+                    <a
+                      href={linkedInLink.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hero-bubble hero-bubble-left absolute left-16 top-12 z-10 hidden items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-semibold text-zinc-800 shadow-soft backdrop-blur transition hover:-translate-y-0.5 sm:flex"
+                    >
+                      <Linkedin className="size-4 text-emerald-700" />
+                      <span>Let's connect</span>
+                    </a>
+                  ) : null}
+                  {coffeeChatLink ? (
+                    <a
+                      href={coffeeChatLink.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hero-bubble hero-bubble-right absolute right-10 top-12 z-10 hidden items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-semibold text-zinc-800 shadow-soft backdrop-blur transition hover:-translate-y-0.5 sm:flex"
+                    >
+                      <MessageSquareMore className="size-4 text-emerald-700" />
+                      <span>Let's coffee chat</span>
+                    </a>
+                  ) : null}
                   <img
                     src={portfolio.profile.avatar}
                     alt={portfolio.profile.name}

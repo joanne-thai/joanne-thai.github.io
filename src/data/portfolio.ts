@@ -38,10 +38,11 @@ export interface Project {
 export const portfolio = {
   profile: {
     name: "Joanne Thai",
-    role: "Data Analyst turning messy business questions into clear, decision-ready insights.",
+    role:
+      "Data Analyst turning messy business questions into clear, decision-ready insights. I build practical dashboards and analysis narratives that help teams move from raw data to confident action.",
     intro:
       "I build practical dashboards, reporting workflows, and analysis narratives that help teams move from raw data to confident action. My focus is on pairing sound analysis with calm, readable communication.",
-    avatar: "/images/avatar-joanne.svg",
+    avatar: "/images/hero_img.png",
     socialLinks: [
       {
         label: "LinkedIn",

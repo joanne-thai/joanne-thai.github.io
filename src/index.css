@@ -36,4 +36,75 @@
   .surface-card {
     @apply rounded-[28px] border border-zinc-200 bg-white shadow-soft;
   }
+
+  .hero-keyword {
+    @apply inline rounded-sm px-0.5 font-medium text-emerald-800;
+    background-image: linear-gradient(90deg, rgba(167, 243, 208, 0.58), rgba(52, 211, 153, 0.34));
+    background-position: 0 88%;
+    background-repeat: no-repeat;
+    background-size: 0 0.42em;
+    animation: keyword-reveal 0.9s ease-out forwards;
+  }
+
+  .hero-copy .hero-keyword:nth-of-type(2) {
+    animation-delay: 0.45s;
+  }
+
+  .hero-copy .hero-keyword:nth-of-type(3) {
+    animation-delay: 0.9s;
+  }
+
+  .hero-bubble {
+    --bubble-bg: rgb(255 255 255 / 0.9);
+    --bubble-border: rgb(255 255 255 / 0.8);
+    background-color: var(--bubble-bg);
+    border-color: var(--bubble-border);
+    isolation: isolate;
+  }
+
+  .hero-bubble:hover,
+  .hero-bubble:focus-visible {
+    --bubble-bg: rgb(236 253 245 / 0.9);
+    --bubble-border: rgb(167 243 208 / 0.8);
+  }
+
+  /* .hero-bubble::after {
+    @apply pointer-events-none absolute;
+    background-color: var(--bubble-bg);
+    box-shadow: inset 0 -1px 0 var(--bubble-border);
+    content: "";
+    height: 2.25rem;
+    transition: background-color 150ms ease, box-shadow 150ms ease;
+    width: 2rem;
+    z-index: -1;
+  }
+
+  .hero-bubble-left::after {
+    @apply right-4;
+    bottom: calc(-2.5rem + 3px);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
+
+  .hero-bubble-right::after {
+    @apply left-4;
+    bottom: calc(-2.5rem);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  } */
+}
+
+@keyframes keyword-reveal {
+  0% {
+    background-size: 0 0.42em;
+  }
+
+  100% {
+    background-size: 100% 0.48em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-keyword {
+    animation: none;
+    background-size: 100% 0.48em;
+  }
 }
