@@ -105,6 +105,13 @@ export const portfolio = {
         description:
           "Earned HackerRank's SQL (Intermediate) certification, validating SQL skills for querying, aggregation, joins, and analytical problem solving.",
       },
+      {
+        title: "Data Analysis with Python",
+        issuer: "IBM",
+        href: "https://www.credly.com/badges/a98a44e0-f7d6-4754-963b-2b365bd78ebc/public_url",
+        description:
+          "Demonstrated data analysis skills using Python, including data wrangling, exploratory analysis, statistical modeling, and visualization with libraries like Pandas, NumPy, and Scikit-learn.",
+      },
     ],
   },
   projects: [
