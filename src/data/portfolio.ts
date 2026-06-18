@@ -116,8 +116,63 @@ export const portfolio = {
   },
   projects: [
     {
-      id: "coffee-sales-powerbi",
+      id: "olist-marketplace-analytics",
       index: "01",
+      slug: "olist-marketplace-analytics",
+      title:
+        "Olist Marketplace Analytics: Retention, Category & Delivery Insights",
+      category: "Power BI",
+      shortDescription:
+        "Analysed a Brazilian e-commerce marketplace across customer retention, category performance, and delivery operations using two years of transaction data. Identified the highest-leverage retention and merchandising opportunities and turned them into a recommendations memo and a Power BI dashboard for marketplace leadership.",
+      tools: "Power BI, MySQL, Python",
+      analysis:
+        "RFM segmentation, cohort retention, category quadrant analysis, delivery decomposition, KPI design",
+      thumbnail: ["/images/7.png", "/images/8.png"],
+      githubUrl: "https://github.com/joanne-thai/olist_commercial_analytics",
+      detailPageEnabled: true,
+      powerbiEmbedUrl:
+        "https://app.powerbi.com/view?r=eyJrIjoiMzdlMGQ2ZmUtZTE5OS00ZDQ3LWE2MWMtYTg0NmFhYTY2MjlmIiwidCI6IjhiNmM0ZDY5LTc5OTMtNDgyYy04OGU5LTZmOWM5ZjlhMDBiOSJ9",
+      images: ["/images/8.png"],
+      badge: "Featured Project",
+      detail: {
+        subtitle:
+          "Turning two years of marketplace transactions into a decision-ready view of retention, category, and delivery.",
+        overview:
+          "This project turned two years of Olist marketplace transactions into a decision-ready view of customer retention, category performance, and delivery operations. It examines where revenue concentrates, which customers are worth keeping, and how delivery shapes satisfaction and repeat purchase across a Brazilian e-commerce marketplace of 96K delivered orders.",
+        businessProblem:
+          "Olist's leadership needed to know where its commercial leverage actually sits in a marketplace defined by structurally low loyalty. The open questions were which categories to invest in versus fix, which customers to retain, and whether late delivery was costing repeat purchase, and if so, where in the delivery chain the problem lived.",
+        dataset:
+          "The Olist public dataset covers roughly 99K orders from 93K customers between September 2016 and August 2018, spanning 73 product categories, 27 Brazilian states, and around 3,000 sellers. Nine raw tables, orders, items, customers, sellers, products, payments, reviews, geolocation, and category translations, were joined into a single delivered-orders fact table, which fed aggregated summary tables for each analysis.",
+        approach: [
+          "Loaded the 9 raw CSVs into MySQL and built a central `fact_orders` table in SQL as the analytical foundation.",
+          "Segmented customers with RFM, historic CLV, and cohort retention to find the highest-value and most at-risk groups.",
+          "Scored all 73 categories on revenue growth versus review quality and plotted them as a strategic quadrant.",
+          "Decomposed delivery time into payment, seller handover, and carrier transit phases, and linked delivery experience to review scores and repeat purchase.",
+          "Built DAX measures and a four-page Power BI dashboard, Overview, Customer Lens, Category Performance, and Operations and Experience.",
+        ],
+        keyInsights: [
+          "35% of revenue sits in growing categories rated below average, concentrated in four, bed bath, watches, furniture, and office furniture, with office furniture the weakest at 3.52.",
+          "Late delivery is a carrier problem, not a seller one. Carrier transit is 74% of the customer wait and quadruples for the latest orders.",
+          "Customers reward early delivery rather than punishing lateness. Repeat purchase lifts 31% when the first order arrives early, while late orders return at the same rate as on-time.",
+          "The marketplace is acquisition-driven, a 3% repeat rate with 94% of revenue from one-time buyers, and its largest retention asset, the Cannot Lose Them segment (15.5% of customers, 29% of revenue), is now dormant.",
+        ],
+        toolsUsed: [
+          "Power BI",
+          "MySQL",
+          "Python (pandas, SQLAlchemy, matplotlib, seaborn)",
+          "DAX",
+        ],
+        recommendations: [
+          "Run a 60-day operational diagnostic on the four high-revenue, low-rated categories, starting with office furniture.",
+          "Overhaul the carrier portfolio in the 9 underperforming states, with a separate diagnostic for Rio de Janeiro's urban-density problem.",
+          "Tighten the delivery-time promise so more orders land in the early bucket, the cheapest retention lever available.",
+          "Launch a win-back campaign for the dormant Cannot Lose Them segment, whose historic value justifies a meaningful incentive.",
+        ],
+      },
+    },
+    {
+      id: "coffee-sales-powerbi",
+      index: "02",
       slug: "coffee-sales-powerbi",
       title: "Coffee Sales Analytics: Pricing, Demand & Product Insights",
       category: "Power BI",
@@ -130,7 +185,6 @@ export const portfolio = {
       detailPageEnabled: true,
       powerbiEmbedUrl: "https://app.powerbi.com/view?r=eyJrIjoiNzlmYjhiMGItMjBkZC00ZGQ1LTgzODgtNjAzYWI2NDQyNTU5IiwidCI6IjhiNmM0ZDY5LTc5OTMtNDgyYy04OGU5LTZmOWM5ZjlhMDBiOSJ9",
       images: ["/images/1.png", "/images/2.png"],
-      badge: "Featured Project",
       detail: {
         subtitle: "Pinpointing which pricing and category shifts could unlock revenue growth across stores.",
         overview:
@@ -160,7 +214,7 @@ export const portfolio = {
     },
     {
       id: "emergency-room-operations-analytics-powerbi",
-      index: "02",
+      index: "03",
       slug: "emergency-room-operations-analytics-powerbi",
       title: "Emergency Room Operations Analytics",
       category: "Power BI",
@@ -202,7 +256,7 @@ export const portfolio = {
     },
     {
        id: "pizza-sales-analytics-powerbi",
-      index: "03",
+      index: "04",
       slug: "pizza-sales-analytics-powerbi",
       title: "Pizza Sales & Product Performance Analytics",
       category: "Power BI",
@@ -245,7 +299,7 @@ export const portfolio = {
     
     {
       id: "netflix-user-behavior-analysis",
-      index: "04",
+      index: "05",
       slug: "netflix-user-behavior-analysis",
       title: "Netflix User Behavior Analysis: SQL & Python Workflow",
       category: "SQL / Python",
@@ -267,7 +321,7 @@ export const portfolio = {
     },
     {
       id: "retail-sales-performance-analysis-sql",
-      index: "05",
+      index: "06",
       slug: "retail-sales-performance-analysis-sql",
       title: "Retail Sales Performance Analysis",
       category: "SQL",
