@@ -83,19 +83,27 @@ export const portfolio = {
     },
     certifications: [
       {
-        title: "Python Certification",
-        issuer: "freeCodeCamp",
-        href: "https://freecodecamp.org/certification/joannethai/python-v9",
+        title: "Microsoft Power BI Data Analyst",
+        issuer: "Microsoft (Coursera)",
+        issued: "July 2026",
+        href: "https://coursera.org/share/064e9bedec79abe2b09c7e5fecaeed1f",
         description:
-          "Validated Python fundamentals through required projects and a certification exam.",
+          "Completed an 8-course specialisation covering preparing and modelling data in Power BI, ETL, data visualisation and dashboard design, and preparation for the Microsoft PL-300 exam.",
       },
       {
-        title: "Data Science Job Simulation",
-        issuer: "Forage",
-        issued: "April 2026",
-        href: "https://www.theforage.com/completion-certificates/SKZxezskWgmFjRvj9/Tcz8gTtprzAS4xSoK_SKZxezskWgmFjRvj9_RtGp7X4HyLQiuqNiu_1775968394592_completion_certificate.pdf",
+        title: "Generative AI for Data Analysts",
+        issuer: "IBM (Coursera)",
+        issued: "June 2026",
+        href: "https://www.coursera.org/account/accomplishments/specialization/D9T22WKPJOIO",
         description:
-          "Completed practical data science tasks across business problem framing, exploratory analysis, data cleaning, feature engineering, modeling, evaluation, and recommendations.",
+          "Completed a 3-course specialisation on applying generative AI to data analytics, covering prompt engineering fundamentals and real-world use cases for enhancing analytics workflows.",
+      },
+      {
+        title: "Data Analysis with Python",
+        issuer: "IBM",
+        href: "https://www.credly.com/badges/a98a44e0-f7d6-4754-963b-2b365bd78ebc/public_url",
+        description:
+          "Demonstrated data analysis skills using Python, including data wrangling, exploratory analysis, statistical modeling, and visualization with libraries like Pandas, NumPy, and Scikit-learn.",
       },
       {
         title: "SQL (Intermediate)",
@@ -106,11 +114,19 @@ export const portfolio = {
           "Earned HackerRank's SQL (Intermediate) certification, validating SQL skills for querying, aggregation, joins, and analytical problem solving.",
       },
       {
-        title: "Data Analysis with Python",
-        issuer: "IBM",
-        href: "https://www.credly.com/badges/a98a44e0-f7d6-4754-963b-2b365bd78ebc/public_url",
+        title: "Data Science Job Simulation",
+        issuer: "Forage",
+        issued: "April 2026",
+        href: "https://www.theforage.com/completion-certificates/SKZxezskWgmFjRvj9/Tcz8gTtprzAS4xSoK_SKZxezskWgmFjRvj9_RtGp7X4HyLQiuqNiu_1775968394592_completion_certificate.pdf",
         description:
-          "Demonstrated data analysis skills using Python, including data wrangling, exploratory analysis, statistical modeling, and visualization with libraries like Pandas, NumPy, and Scikit-learn.",
+          "Completed practical data science tasks across business problem framing, exploratory analysis, data cleaning, feature engineering, modeling, evaluation, and recommendations.",
+      },
+      {
+        title: "Python Certification",
+        issuer: "freeCodeCamp",
+        href: "https://freecodecamp.org/certification/joannethai/python-v9",
+        description:
+          "Validated Python fundamentals through required projects and a certification exam.",
       },
     ],
   },
